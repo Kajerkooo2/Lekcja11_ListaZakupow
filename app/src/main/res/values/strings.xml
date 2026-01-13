@@ -2,4 +2,10 @@
     <string name="app_name">listaAndr</string>
     <string name="hint_new_item">Nowy element</string>
     <string name="btn_add">DODAJ</string>
+    <string-array name="priorytet">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
 </resources>

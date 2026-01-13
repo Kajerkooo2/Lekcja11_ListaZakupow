@@ -20,15 +20,28 @@
         android:orientation="horizontal"
         android:padding="8dp">
 
-        <EditText
-            android:id="@+id/etNewItem"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_new_item"
-            android:background="@android:drawable/edit_text"
-            android:padding="10dp"
-            android:singleLine="true" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etNewItem"
+                android:layout_width="300dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/edit_text"
+                android:hint="@string/hint_new_item"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="300dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:entries="@array/priorytet"/>
+        </LinearLayout>
 
         <Button
             android:id="@+id/btnAdd"
@@ -50,4 +63,14 @@
         android:dividerHeight="1dp"
         android:paddingTop="4dp" />
 
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="#EFEFEF"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:text="Pozostało: 0" />
 </LinearLayout>
