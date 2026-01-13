@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">listaAndr</string>
+    <string name="hint_new_item">Nowy element</string>
+    <string name="btn_add">DODAJ</string>
+</resources>
