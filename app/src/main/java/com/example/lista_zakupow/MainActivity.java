@@ -1,6 +1,7 @@
 package com.example.lista_zakupow;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -46,5 +47,16 @@ public class MainActivity extends AppCompatActivity {
         arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,rzeczyDoZrobienia);
 
         listView.setAdapter(arrayAdapter);
+
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                String rzeczDozrobienie = editText.getText().toString();
+                rzeczyDoZrobienia.add(rzeczDozrobienie);
+                arrayAdapter.notifyDataSetChanged();
+                editText.setText("");
+            }
+        });
+        //to jest na 4, MOZE byc zamiast formularza cos z losowaniem, przecwiczyc
     }
 }
